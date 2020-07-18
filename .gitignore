@@ -5,3 +5,11 @@ local.properties
 build
 app/google-services.json
 .DS_Store
+
+### Firebase ###
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
