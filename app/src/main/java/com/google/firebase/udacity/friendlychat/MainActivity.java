@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FriendlyMessage friendlyMessage = new FriendlyMessage(mMessageEditText.getText().toString(), mUsername, null);
-                mMessagesDbRef.setValue(friendlyMessage);
+                mMessagesDbRef.push().setValue(friendlyMessage);
 
                 // Clear input box
                 mMessageEditText.setText("");
